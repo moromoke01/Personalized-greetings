@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Greeting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+   
+  </style>
+</head>
+
+<body class="bg-gray-100 p-8">
+
+  <div class="greeting mx-auto bg-white p-8 rounded-md shadow-md grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
+
+    <!-- Name Input Form -->
+    <form id="nameForm" class="md:col-span-1">
+      <h1 class="text-2xl font-semibold mb-4">Get a Personalized Greeting</h1>
+      <label for="name" class="block text-sm font-bold mb-2">Your Name:</label>
+      <input type="text" id="name" name="name" class="w-full md:w-2/3 border rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"><br>
+      <button type="submit" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Submit</button>
+    </form>
+
+    <!-- Display Greeting -->
+    <div id="greeting" class="md:col-span-1 mt-8">
+      <p class="text-lg" id="greetingText">Hello, guest!</p>
+      <p>We want to take a moment to express our sincere appreciation for your trust and loyalty. Your support has been the cornerstone of our success, and we are truly grateful for the opportunity to serve you. <br><br>
+        Thank you for choosing <b>HerTechTrail</b>. Your feedback and partnership have been invaluable, and we look forward to continuing to exceed your expectations in the coming year.<br><br>
+      </p>
+      <button id="clearName" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"">Clear Name</button>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>

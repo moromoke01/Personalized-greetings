@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+/* .request-box{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    background: #012f64;
+    color: #fff;
+    transform: translate(10%, 60%);
+}
+
+input{
+    color: #081164;
+} */
+
+.greeting{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    
+    /* height: 85vh; */
+    background: #6a09aa;
+    padding: 70px 40px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0 ,0 ,0, 0.19);
+}
+#greetingText{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.greeting-msg{
+    width: 45%;
+    
+}
+
+input{
+    color: black;
+}
+
+@media (max-width: 640px) {
+    .greeting {
+        width: 95%;
+      grid-template-columns: 1fr; 
+
+      
+    }
+}
