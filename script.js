@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nameForm = document.getElementById('nameForm');
     const greetingText = document.getElementById('greetingText');
     const clearNameButton = document.getElementById('clearName');
+    const inputName = document.getElementById("name");
 
     // Check if the user's name is stored in local storage
     const storedName = localStorage.getItem('userName');
@@ -16,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Store the user's name in local storage
       localStorage.setItem('userName', userName);
+
+      inputName.value = " ";
+
 
       // Update the greeting
       greetingText.textContent = `Hello, ${userName}!`;
